@@ -1,5 +1,5 @@
 body{
-  background-color: #f6f3df;
+  background-color: #fcf3e3;
 
 }
 
@@ -11,12 +11,23 @@ body{
 
 #date{
   text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  margin-top: -2px;
+  font-size: 20px;
 }
 
 #headline{
   text-align: center;
   font-size: 3vw;
-  font-style: embassy;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: auto;
+}
+
+#underheadline{
+  width: 23%;
+  margin-top: -10px;
+  color: black;
+
 }
 
 #headphoto{
@@ -62,17 +73,35 @@ div.underfix{
   margin-top: 50px;
 }
 
-p.bold{
-  font-weight: bold;
+h2{
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+
 }
+
 
 #directions{
   margin-top: 150px;
 
-
 }
 
+#campbellhouse{
+  width:100%;
+  margin-top: 25px;
+}
 
 #programme{
   margin-top: 150px;
+}
+
+#photogallery{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#phototable{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
 }
