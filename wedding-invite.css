@@ -4,6 +4,7 @@ body{
 }
 
 #content{
+  text-align:center;
   margin-left: 400px;
   margin-right: 400px;
 
@@ -95,14 +96,14 @@ h2{
 
 #photogallery{
   width:70%;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #phototable{
-  text-align: center;
-  /*margin-left: 300px;
-  margin-right: 300px;*/
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.smallphoto{
