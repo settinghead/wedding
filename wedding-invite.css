@@ -76,7 +76,6 @@ div.underfix{
 h2{
   font-family: 'Old Standard TT', serif;
   text-align: center;
-
 }
 
 
@@ -96,12 +95,17 @@ h2{
 
 #photogallery{
   width:70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 #phototable{
-  width:70%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  /*margin-left: 300px;
+  margin-right: 300px;*/
+}
+
+img.smallphoto{
+  width: 200px;
+  height: 120px;
 }
