@@ -109,3 +109,7 @@ img.smallphoto{
   width: 200px;
   height: 120px;
 }
+
+.all-caps {
+  text-transform: uppercase;
+}
