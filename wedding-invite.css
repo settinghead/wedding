@@ -94,14 +94,13 @@ h2{
   margin-top: 150px;
 }
 
-#photogallery{
+/*#photogallery{
   width:70%;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
-#phototable{
-  /*text-align: center;*/
+table{
   margin-left: auto;
   margin-right: auto;
 }
@@ -109,8 +108,4 @@ h2{
 img.smallphoto{
   width: 200px;
   height: 120px;
-}
-
-.all-caps {
-  text-transform: uppercase;
 }
