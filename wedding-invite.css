@@ -130,6 +130,6 @@ img#petal3 {
   text-align: left;
   position: absolute;
   left: -200px;
-  -webkit-filter: drop-shadow(10px 10px 10px #ccc);
-  filter:         drop-shadow(10px 10px 10px #ccc);
+  -webkit-filter: drop-shadow(10px 10px 10px #EDCED7);
+  filter:         drop-shadow(10px 10px 10px #EDCED7);
 }

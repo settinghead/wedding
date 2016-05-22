@@ -47,17 +47,17 @@ $(function () { // wait for document ready
 			.add(TweenMax.to($("#petal3"), 1, {css:{bezier:flightpath.leave}, ease:Power1.easeInOut}));
 
 		// build scene
-		new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500, offset: 100})
+		new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1000, offset: 100})
 						.setPin("#target1")
 						.setTween(tween)
 						// .addIndicators() // add indicators (requires plugin)
 						.addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500, offset: 100})
+    new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1000, offset: 0})
 						.setPin("#target2")
 						.setTween(tween)
 						// .addIndicators() // add indicators (requires plugin)
 						.addTo(controller);
-    new ScrollMagic.Scene({triggerElement: "#trigger", duration: 500, offset: 100})
+    new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1000, offset: -100})
 						.setPin("#target3")
 						.setTween(tween)
 						// .addIndicators() // add indicators (requires plugin)
