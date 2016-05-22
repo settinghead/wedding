@@ -5,28 +5,44 @@
 		<link rel="stylesheet" type="text/css" href="wedding-invite.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Old+Standard+TT:400,400italic,700|Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
 
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
 
+		<script src="wedding-invite.js"></script>
 	</head>
 	<body>
-		<div class="fix">
+		<header class="fix">
 
 			<h1 id="headline">Xiyang & Mengqi</h1>
 			<hr id="underheadline">
 			<p id="date">September 3, 2016</p>
-
 			<div class="button">
 				<button type="button" class="singlebutton">Invitation</button>
 				<button type="button" class="singlebutton">Directions</button>
 				<button type="button" class="singlebutton">Programme</button>
 			</div>
-		</div>
+		</header>
 
 		<div class="underfix">
-
 			<img id="headphoto" src="florals-2.jpg"/>
-
-
 			<div id="content">
+
+				<div class="spacer s2"></div>
+				<div class="spacer s0" id="trigger"></div>
+				<div id="target1" class="petal-target">
+					<img id="petal1" src="images/petal-loop.gif"/>
+					<img id="petal2" src="images/petal-loop.gif"/>
+				</div>
+				<div id="target2"  class="petal-target">
+				</div>
+				<div id="target3"  class="petal-target">
+					<img id="petal3" src="images/petal-loop.gif"/>
+				</div>
+				<div class="spacer s2"></div>
+
 				<div id="invite">
 					<h2>Invitation</h2>
 						<p>Together with their families </p>
