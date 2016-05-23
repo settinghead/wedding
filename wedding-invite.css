@@ -4,7 +4,7 @@ body{
 }
 
 #content{
-  text-align:center;
+  /*text-align:center;*/
   margin-left: 400px;
   margin-right: 400px;
 
@@ -15,6 +15,7 @@ body{
   font-family: 'Kaushan Script', cursive;
   margin-top: -2px;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 #headline{
@@ -37,7 +38,7 @@ body{
   margin-right: auto;
   width: 100%;
   height: auto;
-
+  margin-top: 0px;
 }
 
 div.button{
@@ -56,17 +57,17 @@ button.singlebutton{
   margin-right: 20px;
 }
 
-header.fix{
+div.fix{
   position:fixed;
   left:0;
   right:0;
   top:0;
-  height: auto;
+  height: 100px;
   background-color: white;
 }
 
 div.underfix{
-  margin-top: 180px;
+  margin-top: 100px;
 }
 
 #invite{
@@ -92,6 +93,8 @@ h2{
 
 #programme{
   margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
 }
 
 /*#photogallery{
