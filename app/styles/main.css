@@ -156,3 +156,15 @@ will be correctly compiled during `gulp serve` and `gulp`
    -webkit-filter: drop-shadow(10px 10px 10px #EDCED7);
    filter:         drop-shadow(10px 10px 10px #EDCED7);
  }
+
+a.landmark:before {
+  display: block;
+  content: " ";
+  margin-top: -205px;
+  height: 200px;
+  visibility: hidden;
+}
+
+nav {
+  text-align: center;
+}
