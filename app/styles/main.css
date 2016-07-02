@@ -55,6 +55,12 @@ article {
    margin-right: auto;
  }
 
+ .main-narrow {
+   section {
+     margin-top: 5em;
+   }
+ }
+
  #date{
    text-align: center;
    font-family: 'Kaushan Script', cursive;
