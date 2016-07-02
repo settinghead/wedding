@@ -39,6 +39,10 @@ header.fix{
   z-index: 99999;
 }
 
+p.subtext {
+  font-size: 0.7em;
+}
+
 article {
   background-color: white;
   padding: 1em;
