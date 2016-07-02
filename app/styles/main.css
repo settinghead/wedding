@@ -20,14 +20,12 @@ will be correctly compiled during `gulp serve` and `gulp`
  */
  body{
    background-color: #fcf3e3;
-
  }
 
- #content{
-   /*text-align:center;*/
-   margin-left: 400px;
-   margin-right: 400px;
-
+ .main-narrow {
+   width: 30em;
+   margin-left: auto;
+   margin-right: auto;
  }
 
  #date{
@@ -38,21 +36,18 @@ will be correctly compiled during `gulp serve` and `gulp`
    margin-bottom: 10px;
  }
 
- #headline{
+ #headline {
    text-align: center;
-   font-size: 3vw;
+   font-size: 3em;
    font-family: 'Kaushan Script', cursive;
    margin-bottom: auto;
  }
 
- #underheadline{
-   width: 23%;
-   margin-top: -10px;
-   color: black;
-
+ main {
+   margin-top: 10em;
  }
 
- #headphoto{
+ .headphoto{
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -61,15 +56,19 @@ will be correctly compiled during `gulp serve` and `gulp`
    margin-top: 0px;
  }
 
+ #underheadline{
+   width: 23%;
+   margin-top: -10px;
+   color: black;
+ }
+
  div.button{
    text-align: center;
    width: 100%;
  }
 
  button{
-   margin-bottom: 20px;
-
-
+   margin-bottom: 2em;
  }
 
  button.singlebutton{
@@ -82,12 +81,8 @@ will be correctly compiled during `gulp serve` and `gulp`
    left:0;
    right:0;
    top:0;
-   height: 200px;
+   height: 12em;
    background-color: white;
- }
-
- div.underfix{
-   margin-top: 100px;
  }
 
  #invite{
@@ -100,11 +95,6 @@ will be correctly compiled during `gulp serve` and `gulp`
    text-align: center;
  }
 
-
- #directions{
-   margin-top: 150px;
-
- }
 
  #campbellhouse{
    width:100%;
