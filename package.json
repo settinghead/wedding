@@ -40,6 +40,8 @@
     "extends": "google"
   },
   "dependencies": {
+    "gsap": "^1.18.5",
+    "jquery": "^3.0.0",
     "lightbox2": "^2.8.2",
     "scrollmagic": "^2.0.5"
   }

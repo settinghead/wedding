@@ -20,7 +20,6 @@ will be correctly compiled during `gulp serve` and `gulp`
  */
  body{
    background-color: #fcf3e3;
-   font-size: 1.2em;
  }
 
 nav a {
@@ -57,7 +56,7 @@ article {
 
  .main-narrow {
    section {
-     margin-top: 5em;
+     margin-top: 3em;
    }
  }
 
