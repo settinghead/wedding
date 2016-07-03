@@ -120,7 +120,11 @@ gulp.task('scripts', () =>
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './app/node_modules/lightbox2/dist/js/lightbox.js',
+      'node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js',
+      'node_modules/gsap/src/minified/TweenMax.min.js',
+      'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+      'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+      'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
       './app/scripts/main.js',
       // Other scripts
       './app/scripts/effects.js'
