@@ -21,6 +21,7 @@ will be correctly compiled during `gulp serve` and `gulp`
 body{
  background-color: #fcf3e3;
  margin: 0;
+ padding-bottom: 10em;
 }
 
 nav a {
@@ -93,6 +94,15 @@ header #headline {
    -moz-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
  }
+
+h3.schedule {
+  display: inline-block;
+}
+
+span.timestamp {
+  font-size: 0.9em;
+  font-style: italic;
+}
 
  header.shrink hr.underheadline{
    width: 16em;
