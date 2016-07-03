@@ -1,0 +1,115 @@
+body{
+  background-color: #fcf3e3;
+
+}
+
+#content{
+  margin-left: 400px;
+  margin-right: 400px;
+
+}
+
+#date{
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  margin-top: -2px;
+  font-size: 20px;
+}
+
+#headline{
+  text-align: center;
+  font-size: 3vw;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: auto;
+}
+
+#underheadline{
+  width: 23%;
+  margin-top: -10px;
+  color: black;
+
+}
+
+#headphoto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+
+}
+
+div.button{
+  text-align: center;
+  width: 100%;
+}
+
+button{
+  margin-bottom: 20px;
+
+
+}
+
+button.singlebutton{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header.fix{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  height: auto;
+  background-color: white;
+}
+
+div.underfix{
+  margin-top: 180px;
+}
+
+#invite{
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2{
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+}
+
+
+#directions{
+  margin-top: 150px;
+
+}
+
+#campbellhouse{
+  width:100%;
+  margin-top: 25px;
+}
+
+#programme{
+  margin-top: 150px;
+}
+
+#photogallery{
+  width:70%;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#phototable{
+  text-align: center;
+  /*margin-left: 300px;
+  margin-right: 300px;*/
+}
+
+img.smallphoto{
+  width: 200px;
+  height: 120px;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
