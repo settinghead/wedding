@@ -124,6 +124,7 @@ gulp.task('scripts', () =>
       'node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js',
       'node_modules/gsap/src/minified/TweenMax.min.js',
       'node_modules/html2canvas/dist/html2canvas.min.js',
+      'node_modules/stackblur-canvas/dist/stackblur.js',
       'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
       'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
       'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',

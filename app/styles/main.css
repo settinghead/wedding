@@ -175,11 +175,11 @@ article::after {
    background: #fcf3e3;
  }
 
- /*main .img-filler {
+ main .img-filler {
    height: 8em;
    width:100%;
-   background-color: cyan;
- }*/
+   background-color: #ABF1FD;
+ }
 
  .headphoto{
    display: block;
