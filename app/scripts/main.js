@@ -81,3 +81,5 @@
 
   // Your custom JavaScript goes here
 })();
+
+console.info('Designed & created by Xiyang Chen and Mengqi Zhu');
