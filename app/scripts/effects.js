@@ -1,12 +1,8 @@
 /* eslint-env browser */
 
-/* globals ScrollMagic:false */
-/* globals Power1:false */
 /* globals $:false */
-/* globals TweenMax:false */
 /* globals StackBlur:false */
 /* globals html2canvas:false */
-/* globals TimelineMax:false */
 /* eslint max-len: 0 */
 
 // for smooth scrolling
