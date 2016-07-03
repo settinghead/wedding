@@ -102,6 +102,7 @@ h3.schedule {
 span.timestamp {
   font-size: 0.9em;
   font-style: italic;
+  padding-left: 0.4em;
 }
 
  header.shrink hr.underheadline{
