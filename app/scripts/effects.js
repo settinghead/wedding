@@ -4,6 +4,8 @@
 /* globals Power1:false */
 /* globals $:false */
 /* globals TweenMax:false */
+/* globals StackBlur:false */
+/* globals html2canvas:false */
 /* globals TimelineMax:false */
 /* eslint max-len: 0 */
 
@@ -101,7 +103,6 @@ function recheckHeader() {
   } else {
     $('header').removeClass('shrink');
     $('.blurheader').removeClass('shrink');
-
   }
 }
 
@@ -121,7 +122,7 @@ $(function() {
             20);
     }
   });
-  vv = setTimeout(function() {
+  var vv = setTimeout(function() {
     $('header').show();
     clearTimeout(vv);
   }, 200);
