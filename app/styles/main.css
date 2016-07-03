@@ -109,18 +109,57 @@ span.timestamp {
    margin-top: -0.6em;
  }
 
+ a.landmark:before {
+   display: block;
+   content: " ";
+   margin-top: -10em;
+   height: 10em;
+   visibility: hidden;
+ }
+
 @media (max-width: 380px) {
-  header {
+  header, .blurheader {
     max-height: 9em;
   }
+
+  header.shrink, .blurheader.shrink {
+    max-height: 7em;
+  }
+
   header #headline {
     font-size: 2em;
   }
+
+  header.shrink #headline {
+    font-size: 1.5em;
+  }
+
+  header #date {
+    font-size: 1em;
+  }
+
+  header.shrink #date {
+    font-size: 0.9em;
+  }
+
+
   header nav a {
     font-size: 0.8em;
   }
   header hr.underheadline {
     width: 16em;
+  }
+
+  header.shrink hr.underheadline {
+    width: 12em;
+  }
+
+  a.landmark:before {
+    display: block;
+    content: " ";
+    margin-top: -7em;
+    height: 7em;
+    visibility: hidden;
   }
 }
 
@@ -136,6 +175,12 @@ article {
 article img {
   max-width: 100%;
   height: auto;
+}
+
+section#photos img {
+  max-width: 100%;
+  height: auto;
+
 }
 
 article::after {
@@ -183,6 +228,7 @@ article::after {
 
  main {
    background: #fcf3e3;
+   max-width: 100%;
  }
 
  main .img-filler {
@@ -271,13 +317,7 @@ article::after {
    filter:         drop-shadow(10px 10px 10px #EDCED7);
  }
 
-a.landmark:before {
-  display: block;
-  content: " ";
-  margin-top: -10em;
-  height: 10em;
-  visibility: hidden;
-}
+
 
 nav {
   text-align: center;

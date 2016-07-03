@@ -31,7 +31,7 @@ $(document).on('scroll', recheckHeader);
 $(document).ready(recheckHeader);
 
 function recheckHeader() {
-  if ($(document).scrollTop() > 200) {
+  if ($(document).scrollTop() > 150) {
     $('header').addClass('shrink');
     $('.blurheader').addClass('shrink');
   } else {
