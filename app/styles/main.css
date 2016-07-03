@@ -63,6 +63,22 @@ header #headline {
    transition: all 0.2s ease-in-out;
  }
 
+
+ header hr.underheadline {
+   width: 25em;
+   margin-top: -0.6em;
+   color: black;
+   /* animation magic */
+   -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+
+ header.shrink hr.underheadline{
+   width: 16em;
+   margin-top: -0.6em;
+ }
+
 @media (max-width: 380px) {
   header {
     max-height: 9em;
@@ -72,6 +88,9 @@ header #headline {
   }
   header nav a {
     font-size: 0.8em;
+  }
+  header hr.underheadline {
+    width: 16em;
   }
 }
 
@@ -132,20 +151,6 @@ article::after {
    font-size: 1.2em;
  }
 
-header hr.underheadline{
-  width: 25em;
-  margin-top: -0.6em;
-  color: black;
-  /* animation magic */
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-header.shrink hr.underheadline{
-  width: 16em;
-  margin-top: -0.6em;
-}
 
  main {
    margin-top: 8em;
