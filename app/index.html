@@ -40,6 +40,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
   </head>
   <body>
+    <div class="blurheader"></div>
     <header class="fix">
 				<h1 id="headline">Xiyang & Mengqi</h1>
 				<hr class="underheadline" />
@@ -54,24 +55,10 @@
 		</header>
 
     <main>
-      <img class="headphoto" src="images/florals-2.jpg"/>
+      <div class="img-filler"></div>
+      <img class="headphoto" src="images/florals-1.jpg"/>
   		<div class="main-narrow">
   			<div id="content">
-  				<!-- <div class="petals">
-            <div class="spacer s2"></div>
-    				<div class="spacer s0" id="trigger"></div>
-    				<div id="target1" class="petal-target">
-    					<img id="petal1" src="images/petal-loop.gif"/>
-    					<img id="petal2" src="images/petal-loop.gif"/>
-    				</div>
-    				<div id="target2"  class="petal-target">
-    				</div>
-    				<div id="target3"  class="petal-target">
-    					<img id="petal3" src="images/petal-loop.gif"/>
-    				</div>
-    				<div class="spacer s2"></div>
-          </div> -->
-
   				<section id="invitation">
             <a class="landmark" name="invitation"></a>
   					<h2>Invitation</h2>
@@ -146,7 +133,6 @@
             <a href="photos/honest_ed.jpg" data-lightbox="honest_ed" data-title="Honest Ed"><img src="photos/thumb/honest_ed.jpg" /></a><br />
             <a href="photos/toronto_backdrop.jpg" data-lightbox="toronto_skyline" data-title="Toronto backdrop"><img src="photos/thumb/toronto_backdrop.jpg" /></a>
           </section>
-
   			</div>
   		</div>
     </main>
@@ -155,6 +141,8 @@
     <!-- <script src="node_modules/jquery/dist/jquery.js"></script> -->
     <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="node_modules/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="node_modules/html2canvas/dist/html2canvas.js"></script>
+    <script src="node_modules/stackblur-canvas/dist/stackblur.js"></script>
     <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>

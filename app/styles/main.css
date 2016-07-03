@@ -20,6 +20,7 @@ will be correctly compiled during `gulp serve` and `gulp`
  */
 body{
  background-color: #fcf3e3;
+ margin: 0;
 }
 
 nav a {
@@ -30,7 +31,7 @@ nav a {
   color: #555;
 }
 
-header.shrink {
+header.shrink, .blurheader.shrink {
   height: 8em;
 }
 
@@ -39,18 +40,37 @@ header.shrink #headline {
   margin-top: 0.2em;
 }
 
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 header{
-  position:fixed;
-  left:0;
-  right:0;
-  top:0;
-  height: 12em;
   background-color: white;
   z-index: 20;
   /* animation magic */
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  z-index: 20;
+}
+
+header, .blurheader {
+    background: rgba(255, 255, 255, .6);
+    position: fixed;
+    height: 12em;
+    width: 100%;
+    left:0;
+    right:0;
+    top:0;
+}
+
+.blurheader {
+    overflow: hidden;
+    background: #fff;
+    left: 0;
+    z-index: 19;
 }
 
 header #headline {
@@ -151,10 +171,15 @@ article::after {
    font-size: 1.2em;
  }
 
-
  main {
-   margin-top: 8em;
+   background: #fcf3e3;
  }
+
+ /*main .img-filler {
+   height: 8em;
+   width:100%;
+   background-color: cyan;
+ }*/
 
  .headphoto{
    display: block;
@@ -185,10 +210,6 @@ article::after {
    margin-right: 20px;
  }
 
- #invite{
-   text-align: center;
-   margin-top: 50px;
- }
 
  h2{
    font-family: 'Old Standard TT', serif;
@@ -243,11 +264,19 @@ article::after {
 a.landmark:before {
   display: block;
   content: " ";
-  margin-top: -205px;
-  height: 200px;
+  margin-top: -10em;
+  height: 10em;
   visibility: hidden;
 }
 
 nav {
   text-align: center;
+}
+
+#canvas {
+    opacity:1;
+    z-index: 100;
+    position: absolute;
+    display: block;
+    top: 3px;
 }

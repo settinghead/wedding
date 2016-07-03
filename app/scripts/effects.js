@@ -97,7 +97,54 @@ $(document).ready(recheckHeader);
 function recheckHeader() {
   if ($(document).scrollTop() > 200) {
     $('header').addClass('shrink');
+    $('.blurheader').addClass('shrink');
   } else {
     $('header').removeClass('shrink');
+    $('.blurheader').removeClass('shrink');
+
   }
 }
+
+// frosty glass
+
+$(function() {
+  html2canvas($('main'), {
+    onrendered: function(canvas) {
+      $('.blurheader').append(canvas);
+      $('canvas').attr('id', 'canvas');
+      StackBlur.canvasRGB(
+                canvas,
+            0,
+            0,
+            $('canvas').width(),
+            $('canvas').height(),
+            20);
+    }
+  });
+  vv = setTimeout(function() {
+    $('header').show();
+    clearTimeout(vv);
+  }, 200);
+});
+
+$(window).scroll(function() {
+  $('canvas').css(
+        '-webkit-transform',
+        'translatey(-' + $(window).scrollTop() + 'px)');
+});
+
+window.onresize = function() {
+  $('canvas').width($(window).width());
+};
+
+$(document).bind('touchmove', function() {
+  $('canvas').css(
+        '-webkit-transform',
+        'translatey(-' + $(window).scrollTop() + 'px)');
+});
+
+$(document).bind('touchend', function() {
+  $('canvas').css(
+        '-webkit-transform',
+        'translatey(-' + $(window).scrollTop() + 'px)');
+});
