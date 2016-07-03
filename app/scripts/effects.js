@@ -89,3 +89,15 @@ $(function() {
     }
   });
 });
+
+// shrinking header
+$(document).on('scroll', recheckHeader);
+$(document).ready(recheckHeader);
+
+function recheckHeader() {
+  if ($(document).scrollTop() > 200) {
+    $('header').addClass('shrink');
+  } else {
+    $('header').removeClass('shrink');
+  }
+}

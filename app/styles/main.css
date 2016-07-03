@@ -27,9 +27,19 @@ nav a {
   text-decoration: none;
   margin-left: 0.2em;
   margin-right: 0.2em;
+  color: #555;
 }
 
-header.fix{
+header.shrink {
+  height: 8.5em;
+}
+
+header.shrink #headline {
+  font-size: 2em;
+  margin-top: 0.2em;
+}
+
+header{
   position:fixed;
   left:0;
   right:0;
@@ -37,6 +47,10 @@ header.fix{
   height: 12em;
   background-color: white;
   z-index: 20;
+  /* animation magic */
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 p.subtext {
@@ -68,11 +82,14 @@ article {
    margin-bottom: 10px;
  }
 
- #headline {
+header #headline {
    text-align: center;
    font-size: 3em;
    font-family: 'Kaushan Script', cursive;
    margin-bottom: auto;
+   -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
  }
 
  main {
