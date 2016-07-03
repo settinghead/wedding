@@ -18,9 +18,9 @@
 Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
- body{
-   background-color: #fcf3e3;
- }
+body{
+ background-color: #fcf3e3;
+}
 
 nav a {
   font-family: Arial, cursive;
@@ -53,6 +53,26 @@ header{
   transition: all 0.2s ease-in-out;
 }
 
+
+header #headline {
+   text-align: center;
+   font-size: 3em;
+   font-family: 'Kaushan Script', cursive;
+   margin-bottom: auto;
+   -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+
+@media (max-width: 380px) {
+  header {
+    max-height: 9em;
+  }
+  header #headline {
+    font-size: 2em;
+  }
+}
+
 p.subtext {
   font-size: 0.7em;
 }
@@ -60,6 +80,11 @@ p.subtext {
 article {
   padding: 1em;
   position: relative;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
 }
 
 article::after {
@@ -80,6 +105,7 @@ article::after {
    width: 30em;
    margin-left: auto;
    margin-right: auto;
+   max-width: 100%;
  }
 
  .main-narrow {
@@ -96,16 +122,6 @@ article::after {
    margin-bottom: 10px;
  }
 
-header #headline {
-   text-align: center;
-   font-size: 3em;
-   font-family: 'Kaushan Script', cursive;
-   margin-bottom: auto;
-   -webkit-transition: all 0.1s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
- }
-
  main {
    margin-top: 8em;
  }
@@ -115,6 +131,7 @@ header #headline {
    margin-left: auto;
    margin-right: auto;
    width: 100%;
+   min-width: 100%;
    height: auto;
    margin-top: 0px;
  }
