@@ -31,7 +31,7 @@ nav a {
 }
 
 header.shrink {
-  height: 8.5em;
+  height: 8em;
 }
 
 header.shrink #headline {
@@ -53,7 +53,6 @@ header{
   transition: all 0.2s ease-in-out;
 }
 
-
 header #headline {
    text-align: center;
    font-size: 3em;
@@ -70,6 +69,9 @@ header #headline {
   }
   header #headline {
     font-size: 2em;
+  }
+  header nav a {
+    font-size: 0.8em;
   }
 }
 
@@ -114,13 +116,36 @@ article::after {
    }
  }
 
- #date{
+ header .date{
    text-align: center;
    font-family: 'Kaushan Script', cursive;
    margin-top: -2px;
-   font-size: 20px;
+   font-size: 1.5em;
    margin-bottom: 10px;
+   /* animation magic */
+   -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
  }
+
+ header.shrink .date{
+   font-size: 1.2em;
+ }
+
+header hr.underheadline{
+  width: 25em;
+  margin-top: -0.6em;
+  color: black;
+  /* animation magic */
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header.shrink hr.underheadline{
+  width: 16em;
+  margin-top: -0.6em;
+}
 
  main {
    margin-top: 8em;
@@ -136,11 +161,6 @@ article::after {
    margin-top: 0px;
  }
 
- #underheadline{
-   width: 23%;
-   margin-top: -10px;
-   color: black;
- }
 
 .text-center {
   text-align: center;
