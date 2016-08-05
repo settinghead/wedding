@@ -38,7 +38,7 @@ header.shrink, .blurheader.shrink {
 }
 
 header.shrink #headline {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-top: 0.2em;
 }
 
@@ -77,8 +77,9 @@ header, .blurheader {
 
 header #headline {
    text-align: center;
-   font-size: 3em;
-   font-family: 'Kaushan Script', cursive;
+   font-size: 3.6em;
+   font-family: 'Allura', cursive;
+   font-weight: normal;
    margin-bottom: auto;
    -webkit-transition: all 0.1s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -88,7 +89,7 @@ header #headline {
 
  header hr.underheadline {
    width: 25em;
-   margin-top: -0.6em;
+   margin-top: -0.8em;
    color: black;
    /* animation magic */
    -webkit-transition: all 0.1s ease-in-out;
@@ -217,7 +218,7 @@ article::after {
 
  header .date{
    text-align: center;
-   font-family: 'Kaushan Script', cursive;
+   font-family: 'Allura', cursive;
    margin-top: -2px;
    font-size: 1.5em;
    margin-bottom: 10px;
@@ -338,12 +339,12 @@ nav {
 }
 
 .buttonfonts {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Allura', cursive;
   font-size: 40px;
 }
 
 #specialname{
-   font-family: 'Kaushan Script', cursive;
+   font-family: 'Allura', cursive;
    font-size: 30px;
    margin-top: 15px;
    margin-bottom: 15px;
